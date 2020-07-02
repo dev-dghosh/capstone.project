@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dipendu's Page</title>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href = "CSS/styles2.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Merriweather+Sans&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/31d5b7635d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav class="topnav" id="myTopnav">
+			<a href ="index.html">Home</a>
+			<a class ="selected" href = "about.html" >About</a>
+			<a href = "connect.html" >Connect</a>
+			<a href="#"  onclick="changeBack()">Click!</a>
+			<a href="javascript:void(0);" class="navicon" onclick="dispmenu()">
+				<i class="fas fa-align-justify "></i>
+			</a>
+		</nav>
+	</header>
+
+	<main>
+		<details >
+			<summary><b>A bit of myself</b></summary>
+			<p>I was born in the year 1999 in Habra, West Bengal.
+				Last 90's kids they say.
+				Currently a undergrad student at GCETTS in Computer Science & Engineering. I guess I am happy now, cause I am learning new things, making new friends and have a target set. Exciting times isn' it? 
+				Anyway enough writing for a goddamned project for the final course on the web design specialization.
+			</p>
+		</details>
+
+		<section class="hobby">
+			<h3>Current Hobbies</h3>
+				<ul>
+					<li>Challenge me to a chess <a href="#" target = "_blank">match</a>.</li>
+					<li>I am a newbie to <a href="#" target = "_blank">Competitive Programming</a>.</li>
+					<li>In love with <a href="https://manjaro.org/" title ="Manjaro Linux" target = "_blank">Manjaro</a>.</li>
+					<li>Learning <a href="https://www.python.org/" title ="Python" target="_blank">Python</a>.</li>
+					<li>Reading <a href="https://en.wikipedia.org/wiki/The_Day_of_the_Jackal" title="Wiki" target="_blank"><cite>The Day of the Jackel</cite></a> by <b>Frederick Forsyth</b>.</li>
+				</ul>
+		</section>
+
+		<section class="event">
+			<h3>Academic Events</h3>
+			<table>
+				<tr>
+					<th>Event</th>
+					<th>Year</th>
+					<th>Marks</th>
+					<th>Passed</th>
+				</tr>
+				<tr>
+					<td>CBSE</td>
+					<td>2015</td>
+					<td>90.0%</td>
+					<td>Yes</td>
+				</tr>
+				<tr>
+					<td>CBSE</td>
+					<td>2017</td>
+					<td>90.0%</td>
+					<td>Yes</td>
+				</tr>
+				<tr>
+					<td class="special">MAKAUT</td>
+					<td class="special">2018</td>
+					<td class ="special">&nbsp;&nbsp;-</td>
+					<td class="special">&nbsp;&nbsp;&nbsp;-</td>
+				</tr>
+			</table>
+		</section>
+		<section class="achievement">
+			<h3>Achivements</h3>
+			<ol type ="A">
+				<li><b>Introduction to HTML5</b> can be verified <a href="#" target="_blank">here</a>.</li>
+				<li><b>Introduction to CSS3</b> can be verified <a href="#" target="_blank">here</a>.</li>
+				<li><b>Interactivity with Javascript</b> can be verified <a href="#" target="_blank">here</a>.</li>
+				<li><b>Advanced Styling with Responsive Design</b> can be verified <a href="#" target="_blank">here</a>.</li>
+				<li><b>Mathematics for Machine Learning: Multivariate Calculus</b> can be verified <a href="#" target="_blank">here</a>.</li>
+				
+			</ol>
+		</section>	
+	</main>
+	
+	<footer>
+		Made with <span>&nbsp;&#10084;&nbsp;</span> by Dipendu Ghosh<br>
+	</footer>
+
+	<script>
+
+		var bg = 0;
+		function dispmenu() {
+ 		 	var x = document.getElementById("myTopnav");
+  			if (x.className === "topnav") {
+    			x.className += " responsive";
+  			} 	else {
+   				x.className = "topnav";
+ 			}
+		}
+
+		function changeBack(){
+			if(bg){
+				document.body.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("Img/home_background.jpg")';
+				bg = 0;
+			}
+			else{
+				document.body.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Img/home_background2.jpg")';
+				bg = 1;
+			}
+		}
+	</script>
+	
+	
+</body>
+</html>

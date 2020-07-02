@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dipendu's Page</title>
+	<script src="https://kit.fontawesome.com/31d5b7635d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href = "CSS/styles3.css">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<header>
+		<nav class="topnav" id="myTopnav">
+			<a href = "index.html" >Home</a>
+			<a href = "about.html" >About</a>
+			<a class ="selected" href = "connect.html" >Connect</a>
+			<a href="#"  onclick="changeBack()">Click!</a>
+			<a href="javascript:void(0);" class="navicon" onclick="dispmenu()">
+				<i class="fas fa-align-justify "></i>
+			</a>
+		</nav>
+	</header>
+
+	<main>
+		<h3>You can find me lurking somewhere here: </h3>
+		<ul>
+			<li>My College: <a href = "http://www.gcetts.org/" title = "GCETTS" target = "_blank">GCETTS</a>&nbsp;<i class="fas fa-graduation-cap fa-2x"></i></li>
+			<li>My current hometown: <a href = "https://en.wikipedia.org/wiki/Serampore" title = "Serampore" target="_blank">Serampore</a>&nbsp;<i class="fas fa-home fa-2x"></i></li>
+			<li>Email: <a href="#">dependughosh@gmail.com</a>&nbsp;<i class="fas fa-envelope-square fa-2x"></i></li>
+			<li>Linkedin: <a href="#" target="_blank">Dipendu Ghosh</a>&nbsp;<i class="fab fa-linkedin-in fa-2x"></i></li>
+			<li>Quora: <a href="#">Dipendu Ghosh</a>&nbsp;<i class="fab fa-quora fa-2x"></i></li>
+			<li>Github: <a href="https://github.com/FishySun" title="FishySun" target="_blank">FishySun</a>&nbsp;<i class="fab fa-github fa-2x"></i></li>
+			<li>Hackerank: <a href="#">ZABC</a>&nbsp;<i class="fab fa-hackerrank fa-2x"></i></li>
+		</ul>
+
+		<div class="imagerow">
+	  		<a href="#"><img id ="first" src="https://upload.wikimedia.org/wikipedia/commons/7/70/RathYatra.jpg"  alt = "Serampore Rathyatra"></a>		
+			<a href="#"><img class="normal" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Admin_building_gcetts.jpg"  alt = "Govt College of Engineering and Textitle Technology"></a>		
+			<a href="#"><img class="normal" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Ukil_Bari%2C_Chatra_Durga_Puja.jpg"   alt = "Durga Puja"></a>		
+			<a href="#"><img id="last" src="https://upload.wikimedia.org/wikipedia/commons/2/20/SeramporeJT.jpg"  alt = "Ganges River" ></a>
+		</div>
+  		
+	</main>
+
+	<footer>
+		Made with <span>&nbsp;&#10084;&nbsp;</span> by Dipendu Ghosh<br>
+	</footer>
+
+	<script>
+		bg = 0;
+
+		function dispmenu() {
+ 		 var x = document.getElementById("myTopnav");
+  		if (x.className === "topnav") {
+    		x.className += " responsive";
+  		} else {
+   			x.className = "topnav";
+ 		}
+	}
+
+	function changeBack(){
+			if(bg){
+				document.body.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("Img/home_background.jpg")';
+				bg = 0;
+			}
+			else{
+				document.body.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("Img/home_background2.jpg")';
+				bg = 1;
+			}
+		}	
+	</script>
+	
+</body>
+</html>
